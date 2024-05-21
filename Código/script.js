@@ -5,8 +5,8 @@ let rank = "";
 // Laço de repetição;
 do {
 
-	if ( nivelXP < 0) { // Se a variável xp for menor que 0 o código vai encerrar com mensagem abaixo;
-		console.log("XP Inválido!, mude a opção xp para um valor maior ou igual a 0");
+	if ( nivelXP < 0) { // Mensagem de erro se o nivel for inferior a 0;
+		console.log("XP Inválido! Por favor, inserir número maior ou igual a 0");
 		break;
 	}
 
@@ -35,7 +35,7 @@ do {
 		rank = "Radiante";
 	}
 
-	// Mensagem final se a variável xp for maior ou igual a zero, onde a classificação será dada de acordo com a quantidade de xp;
+	// Mensagem final com o nome e rank do herói
 	console.log("O Herói " + nomeHeroi + " está no rank " + rank)
 	break;
 
